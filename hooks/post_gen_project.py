@@ -140,7 +140,6 @@ file_content = FileContent()
 with open("./.gitignore", "w") as ignore_file:
     ignore_file.write(file_content.ignore)
 
-run("poetry add --dev mypy coverage bandit black pylint flake8 nox pytest")
 run("poetry update")
 run("git init")
 run("git flow init -d")
